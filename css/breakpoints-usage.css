@@ -1,0 +1,92 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 286px) and (max-width: 767px) {
+  .rotate-md {
+    transform: rotate(90deg);
+  }
+  .title {
+    font-size: 2.5em !important;
+  }
+/* Size decorators */
+.circle.circle-sm-x-small {
+  max-width: 120px;
+  max-height: 120px;
+}
+.circle.circle-sm-small {
+  max-width: 180px;
+  max-height: 180px;
+}
+.circle.circle-sm-middle {
+  max-width: 375px;
+  max-height: 375px;
+}
+.circle.circle-sm-big {
+  max-width: 480px;
+  max-height: 480px;
+}
+/* Border width decorators */
+.circle.x-small-sm-border {
+  --width-border: 10px;
+  border: solid var(--width-border) var(--lighten-1-primary-color);
+}
+.circle.small-sm-border {
+  --width-border: 20px;
+  border: solid var(--width-border) var(--lighten-1-primary-color);
+}
+.circle.middle-sm-border {
+  --width-border: 30px;
+  border: solid var(--width-border) var(--lighten-1-primary-color);
+}
+.circle.big-sm-border {
+  --width-border: 40px;
+  border: solid var(--width-border) var(--lighten-1-primary-color);
+}
+  /* Align decorators */
+  .align-circle-sm-t-l {
+    margin-top: calc(var(--width-border) / 2);
+    top: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .align-circle-sm-t-r {
+    margin-top: calc(var(--width-border) / 2);
+    top: 0;
+    right: 0;
+    transform: translateX(50%) translateY(-50%);
+  }
+  .align-circle-sm-b-l {
+    margin-top: calc(var(--width-border) / 2);
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%) translateY(50%);
+  }
+  .align-circle-sm-b-r {
+    margin-top: calc(var(--width-border) / 2);
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%) translateY(50%);
+  }
+  .align-circle-sm-m-l {
+    margin-bottom: calc(var(--width-border / 2));
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .align-circle-sm-m-r {
+    margin-bottom: calc(var(--width-border / 2));
+    top: 50%;
+    right: 0;
+    transform: translateX(50%) translateY(-50%);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) { ... } */

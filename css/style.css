@@ -1,0 +1,116 @@
+/* header  */
+.header-banner-page {
+  --max-height-header-banner: 1000px;
+  --height-nav-bar: 88px;
+  min-height: 600px;
+  height: 100vh;
+  max-height: var(--max-height-header-banner);
+  position: relative;
+}
+.bg-color-gradient {
+  background-size: cover !important;
+  background: linear-gradient(
+    67deg,
+    var(--darken-1-primary-color),
+    var(--primary-color)
+  );
+}
+.navbar-item-link {
+  position: relative;
+  transition: 120ms;
+}
+.navbar-item-link:hover::before,
+.navbar-item-link.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--bs-white);
+  bottom: 5px;
+  left: 0;
+  transition: 220ms;
+}
+/* Slide  */
+.banner {
+  position: relative;
+}
+.slider-container {
+  list-style: none;
+  min-height: 500px;
+  max-height: calc(var(--max-height-header-banner) - var(--height-nav-bar));
+  height: calc(100vh - var(--height-nav-bar));
+}
+.next-section {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slide-item {
+  position: relative;
+}
+.text-slide {
+  max-width: 520px;
+}
+.text-slide .description {
+  line-height: 1.5 !important;
+  letter-spacing: 0.0258rem;
+}
+/* Main  */
+.img-asset-card {
+  max-height: 180px;
+  height: 100%;
+}
+.img-asset-card-md {
+  max-height: 210px;
+}
+.aside-pulse-recomended {
+  --width-border: 10px;
+}
+/* Slider  */
+.slide,
+.carousel-inner {
+  transition: height 390ms !important;
+  height: max-content;
+}
+.carousel-indicators {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  margin: 0 !important;
+  width: 100%;
+  list-style: none;
+
+}
+.carousel-indicators > *{
+  border-radius: 25px !important;
+  border: 0 !important;
+}
+.carousel-indicators .circle-item {
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px !important;
+  background-color: var(--secondary-black) !important;
+}
+.carousel-indicators .circle-item.active {
+  background-color: var(--secondary-color) !important;
+}
+
+/* Accordion  */
+.accordion-item {
+  border: none;
+}
+.accordion-title-button {
+  border-radius: 25px !important;
+  outline: none;
+}
+.accordion-title-button:focus {
+  border: none;
+}
+.accordion-title-button:not(.collapsed) {
+  box-shadow: none;
+}
