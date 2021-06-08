@@ -29,11 +29,14 @@
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/breakpoints-usage.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Easy4You - 2 anos em 2 meses</title>
   </head>
 
   <body>
-    <header class="header-banner-page bg-color-gradient" data-id-scroll-action="dispatch-circle-animate">
+    <header
+      class="header-banner-page bg-color-gradient"
+      data-id-scroll-action="dispatch-circle-animate"
+    >
       <div class="container">
         <nav
           class="navbar navbar-expand-lg"
@@ -61,23 +64,30 @@
             <div class="collapse navbar-collapse justify-content-end">
               <ul class="navbar-nav">
                 <li class="nav-item px-2">
-                  <a data-href="about" class="nav-link navbar-item-link text-white cursor-pointer"
+                  <a
+                    data-href="about"
+                    class="nav-link navbar-item-link text-white cursor-pointer"
                     >Sobre</a
                   >
                 </li>
                 <li class="nav-item px-2">
-                  <a data-href="method" class="nav-link navbar-item-link text-white cursor-pointer"
+                  <a
+                    data-href="method"
+                    class="nav-link navbar-item-link text-white cursor-pointer"
                     >Método</a
                   >
                 </li>
                 <li class="nav-item px-2">
-                  <a data-href="depositions" class="nav-link navbar-item-link text-white cursor-pointer"
+                  <a
+                    data-href="depositions"
+                    class="nav-link navbar-item-link text-white cursor-pointer"
                     >Depoimentos</a
                   >
                 </li>
                 <li class="nav-item px-2">
                   <a
-                    href="#!"
+                    href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0"
+                    target="_blank"
                     class="
                       btn
                       onhover-scale-0-95
@@ -90,6 +100,100 @@
                   >
                 </li>
               </ul>
+            </div>
+            <span
+              data-bs-toggle="offcanvas"
+              href="#menu-mobile"
+              role="button"
+              aria-controls="menu-mobile"
+              class="text-white d-inline-block d-lg-none px-1"
+              ><i class="material-icons">menu</i></span
+            >
+            <div
+              class="offcanvas offcanvas-end max-width-md bg-white"
+              data-id="navbar-mobile"
+              tabindex="-1"
+              id="menu-mobile"
+              aria-labelledby="menu-mobileLabel"
+            >
+              <div class="offcanvas-header">
+                <div class="col-12 d-flex flex-row justify-items-center">
+                  <span
+                    aria-label="Close"
+                    class="cursor-pointer"
+                    data-bs-dismiss="offcanvas"
+                  >
+                    <i class="material-icons text-black-darken-2">close</i>
+                  </span>
+                  <h3 class="h4 text-center flex-grow-1">Menu</h3>
+                </div>
+              </div>
+              <nav>
+                <ul class="navbar flex-column align-items-stretch p-0">
+                  <li class="nav-item d-block py-0">
+                    <a
+                      data-mob-href="about"
+                      class="
+                        nav-link
+                        d-block
+                        px-4
+                        py-3
+                        text-black-darken-2
+                        cursor-pointer
+                      "
+                      data-bs-dismiss="offcanvas"
+                      >Sobre</a
+                    >
+                  </li>
+                  <li class="nav-item d-block py-0">
+                    <a
+                      data-mob-href="method"
+                      class="
+                        nav-link
+                        d-block
+                        px-4
+                        py-3
+                        text-black-darken-2
+                        cursor-pointer
+                      "
+                      data-bs-dismiss="offcanvas"
+                      >Método</a
+                    >
+                  </li>
+                  <li class="nav-item d-block py-0">
+                    <a
+                      data-mob-href="depositions"
+                      class="
+                        nav-link
+                        d-block
+                        px-4
+                        py-3
+                        text-black-darken-2
+                        cursor-pointer
+                      "
+                      data-bs-dismiss="offcanvas"
+                      >Depoimentos</a
+                    >
+                  </li>
+                  <li class="nav-item d-block py-0 px-2">
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0"
+                      target="_blank"
+                      class="
+                        btn
+                        onhover-scale-0-95
+                        onclick-outline-color-secondary
+                        rounded-pill
+                        d-block
+                        btn-secondary
+                        px-4
+                        py-2
+                      "
+                      >Aula Experimental</a
+                    >
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </nav>
@@ -116,7 +220,8 @@
                   ponto, com níveis de aprendizado e sem enrolação.
                 </p>
                 <a
-                  href="#!"
+                  href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0"
+                  target="_blank"
                   data-js-action="next-slide"
                   class="
                     btn
@@ -271,9 +376,10 @@
             </p>
           </div>
           <div class="divider col-12 my-5"></div>
-          <div class="d-flex justify-content-center col-12 mt-5">
+          <div class="d-flex justify-content-center col-12 mt-5" data-line>
             <a
-              href="#!"
+              href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0"
+              target="_blank"
               class="
                 btn btn-secondary btn-lg
                 onhover-scale-0-95
@@ -282,6 +388,7 @@
               "
               >Agendar Aula</a
             >
+            <div class="pseudo-line"></div>
           </div>
           <div class="d-flex justify-content-center col-12 mt-5 card-with-chip">
             <span
@@ -326,6 +433,7 @@
           rounded
           shadow
           bg-white
+          z-index-3
         "
       >
         <span class="chip chip-primary align-centered-chip">Nível 1</span>
@@ -396,7 +504,9 @@
           rounded
           shadow
           bg-white
+          z-index-3
         "
+        data-line-step="one"
       >
         <span class="chip chip-primary align-centered-chip">Nível 2</span>
         <div
@@ -482,6 +592,7 @@
           rounded
           shadow
           bg-white
+          z-index-3
         "
       >
         <span class="chip chip-primary align-centered-chip">Nível 3</span>
@@ -539,7 +650,6 @@
         data-id="slide"
         data-bs-ride="carousel"
       >
-        <svg data-id="vertical-line"></svg>
         <span class="chip chip-primary align-centered-chip">
           O que dizem sobre?
         </span>
@@ -828,18 +938,10 @@
         ></span>
       </section>
       <div class="divider col-12 my-5 py-5"></div>
-      <section
-        class="
-          card-with-chip
-          bg-white
-          px-4
-          py-1 py-md-5
-          rounded
-          shadow
-          bg-white
-        "
-      >
-        <span class="chip px-3 chip-primary align-centered-chip"
+      <section class="card-with-chip bg-white px-4 py-1 py-md-5 rounded shadow">
+        <span
+          class="chip px-3 chip-primary align-centered-chip"
+          data-line-step="last"
           >Principais dúvidas</span
         >
         <div
@@ -1040,17 +1142,43 @@
         </div>
       </section>
       <div class="divider col-12 py-5"></div>
+      <section class="bg-white py-1 py-md-5 text-center">
+        <h3 class="title text-strong text-primary">
+          Agende sua <br />
+          aula experimental
+        </h3>
+        <p class="text-black-darken-2">
+          E faça parte do 1% dos brasileiros que têm fluência no inglês
+        </p>
+        <div class="divider col-12 py-3"></div>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0"
+          target="_blank"
+          class="
+            btn btn-secondary
+            onhover-scale-0-95
+            btn-lg
+            px-5
+            rounded-pill
+            h3
+          "
+          >Agendar aula</a
+        >
+        <i class="text-black-darken-2 small d-block"
+          >A aula experimental é totalmente gratuíta</i
+        >
+      </section>
+      <div class="my-5"></div>
     </main>
     <aside>
-      <!-- TODO [x] Adicionar tooltip de auxílio ao usuário  -->
       <a
-        href="#!"
+        href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0"
+        target="_blank"
         data-js-animate="active-on-scroll"
         class="
           shadow
           onclick-animate-scale
-          scale-transition
-          scale-transition-hidden
+          scale-transition scale-transition-hidden
           onhover-scale-0-95
           ripple-btn ripple-secondary ripple-align-r-b
           me-4
@@ -1065,6 +1193,14 @@
         <i class="text-decoration-none text-white material-icons ps-1">send</i>
       </a>
     </aside>
+    <footer class="footer-page bg-primary position-relative">
+      <dic class="container">
+        <p class="small text-white text-center">
+          Todos os direitos reservados Easy4You<sup>&copy;</sup> —
+          <span data-id="year"></span>
+        </p>
+      </dic>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
