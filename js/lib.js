@@ -73,6 +73,9 @@ class myLibQuery {
   css(style) {
     this.element.style.cssText = style;
   }
+  style(prop, value) {
+    this.element.style[prop] = value
+  }
   // Position
   position(coordinate) {
     const directions = {
