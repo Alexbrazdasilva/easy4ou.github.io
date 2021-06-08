@@ -1,304 +1,132 @@
-/* FontAwesome for working BootSnippet :> */
-
-html {
-    font-size: 70% /* or 62.5% or whatever you like, it doesn't matter, it's just a browser fix, however "rem" units will be based on that value, so make it confortable for calculations */
+/* header  */
+.header-banner-page {
+  --max-height-header-banner: 1000px;
+  --height-nav-bar: 88px;
+  min-height: 600px;
+  height: 100vh;
+  max-height: var(--max-height-header-banner);
+  position: relative;
 }
-
-body {
-    background: #183181;
-    font-size: 12px;
-    font-size: 1rem;
+.bg-color-gradient {
+  background-size: cover !important;
+  background: linear-gradient(
+    67deg,
+    var(--darken-1-primary-color),
+    var(--primary-color)
+  );
 }
-
-.section-title {
-    text-align: center;
-    color: #fff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
+.navbar-item-link {
+  position: relative;
+  transition: 120ms;
 }
-
-.container {
-    width: 90%;
-    margin: auto;
-    font-size: 8px;
+.navbar-item-link:hover::before,
+.navbar-item-link.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  background-color: var(--bs-white);
+  bottom: 5px;
+  left: 0;
+  transition: 220ms;
 }
-
-.section-title-header {
-    text-align: center;
-    color: #fff;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-transform: uppercase;
+/* Slide  */
+.banner {
+  position: relative;
 }
-
-.card {
-    width: 100%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 1px;
-    padding-right: 1px;    
-    margin-bottom:7px ;
-    margin-top: 7px;
+.slider-container {
+  list-style: none;
+  min-height: 500px;
+  max-height: calc(var(--max-height-header-banner) - var(--height-nav-bar));
+  height: calc(100vh - var(--height-nav-bar));
 }
-.card-header {
-    display: flex;
-    width: 100%;
-    color:#183181;
-    background-color: #92c5ea;
-    border-radius: 4px;
-    align-items: center;
-    text-align: center;
-    text-indent: 30px;
-    /*font-weight: bolder;*/
-    padding-right: .3rem;
-    padding-left: .3rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.2rem;
-    margin: 0rem;
-    /* border-radius: 0;
-    background-color: #92c5ea;
-    color: #183181; */
-    
+.next-section {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-.card-body {
-    text-align: justify;
-    color:  #fff;
-    background-color: #2e75bc;
-    padding: .4rem;
+.slide-item {
+  position: relative;
 }
-
-.p-modal {
-    text-align: justify;
-    padding: 3px;
+.text-slide {
+  max-width: 520px;
 }
-/*
-button img {
-    width: 80px;
-    height: 80px;
-    float:left
+.text-slide .description {
+  line-height: 1.5 !important;
+  letter-spacing: 0.0258rem;
 }
-*/
-.student {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 20px;
+/* Main  */
+.img-asset-card {
+  max-height: 180px;
+  height: 100%;
+}
+.img-asset-card-md {
+  max-height: 210px;
+}
+.aside-pulse-recomended {
+  --width-border: 10px;
+}
+/* Slider  */
+.slide,
+.carousel-inner {
+  transition: height 390ms !important;
+  height: max-content;
+}
+.carousel-indicators {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  margin: 0 !important;
+  width: 100%;
+  list-style: none;
 
 }
-.img-plus {
-    width: 30px;
-    /*height: 40px;*/
-    color: #edf2f7;
+.carousel-indicators > *{
+  border-radius: 25px !important;
+  border: 0 !important;
 }
-.img-mini-card {
-    width: 80px;
-    height: 80px;
-    padding-right: 5px;
+.carousel-indicators .circle-item {
+  display: block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px !important;
+  background-color: var(--secondary-black) !important;
 }
-
-.large-photo {
-    border-radius: 4px;
-    width: 150px;
-    float:left;
-    margin-right: 6px;
-    border: 1px solid #000000;
+.carousel-indicators .circle-item.active {
+  background-color: var(--secondary-color) !important;
 }
 
-.contact {
-    text-align: center;
-    display: flex;
-    justify-content:center; /*center;*/
-    flex-direction: row;
-    width: 100%;
-    color:#183181;
-    background-color: #183181;
-    border-radius: 4px;
-    border: 1px solid  white;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    align-items: center;
-    margin: 0 auto;
+/* Accordion  */
+.accordion-item {
+  border: none;
+}
+.accordion-title-button {
+  border-radius: 25px !important;
+  outline: none;
+}
+.accordion-title-button:focus {
+  border: none;
+}
+.accordion-title-button:not(.collapsed) {
+  box-shadow: none;
 }
 
-.info {
-    width: 100%;
-    text-align: center;
-    color:  #fff;
-    background-color: #183181;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding-right: 5px;
+[data-line] {
+  position: relative;
 }
-
-a:link, a:visited {
-    background-color:#183181;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-width:5px white;
-}  
-  
-.mini-card {
-    display: flex;
-    width: 100%;
-    color:#183181;
-    background-color: #92c5ea;
-    border-radius: 4px;
-    align-items: center;
-    text-align: center;
-    /*padding: 5px 0;*/
-    margin: 0px;
-    border: 1px solid  #2e75bc;
+[data-line] .pseudo-line {
+  width: 1px;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: #dadada;
+  z-index: -10;
 }
-
-.modal-content {
-    background-color: #fff;
-    color: #183181;
-    padding: 3px;
+[data-line-step="last"] {
+  transition: height 280ms;
 }
-
-.modal-body {
-    background-color: #92c5ea;
-    padding-right: .3rem;
-    padding-left: .3rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0rem;
-}
-/*
-.modal-btn {
-    background-color: #92c5ea;
-    color:#fff;
-   /* border: 1px solid #fff;
-    border:0px;
-    float:right
-}
-*/
-/* TODO: Usar viewport */
-.img-teacher-student {
-    width: 60%;
-    min-width: 60%;
-    align-content: center;
-    margin: auto;
-}
-
-.chart-text {
-    font: 10px/1.25em, sans-serif;
-    fill: #fff;
-    -moz-transform: translateY(0.25em);
-    -ms-transform: translateY(0.25em);
-    -webkit-transform: translateY(0.25em);
-    transform: translateY(0.25em);
-}
-.chart-number {
-    font-size: 0.6em;
-    line-height: 1;
-    text-anchor: middle;
-    -moz-transform: translateY(-0.25em);
-    -ms-transform: translateY(-0.25em);
-    -webkit-transform: translateY(-0.25em);
-    transform: translateY(-0.25em);
-}
-.chart-label {
-    font-size: 0.2em;
-    /*text-transform: uppercase;*/
-    text-anchor: middle;
-    -moz-transform: translateY(0.7em);
-    -ms-transform: translateY(0.7em);
-    -webkit-transform: translateY(0.7em);
-    transform: translateY(0.7em);
-}
-
-.chart-label.text-mini {
-    font-size: 0.16em;
-}
-
-figure {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin: auto;
-    align-items: flex-start;
-    align-content: center;
-    margin-left: 5%;
-    margin-right: 5%;
-}  
-@media (min-width: 768px) {
-    figure {
-      flex-direction: row;
-    }
-}  
-.figure-content,
-.figure-key {
-    flex: 1;
-    padding-left: 0px;
-    padding-right: 0px;
-    align-self: center;
-}
-.figure-content svg {
-    height: 100%;
-    max-width: 400px;
-    font-size: 1em;
-} 
-
-.figure-key {
-    min-width: calc(6 / 12);
-}
-  
-.figure-key [class*="shape-"] {
-    margin-right: 3px;
-}  
-.figure-key-list {
-    margin: 0;
-    padding: 5px;
-    padding-left: 30px;
-    list-style: none;
-}  
-.figure-key-list li {
-    margin: 0 0 4px;
-    padding: 1px;
-    color: #edf2f7;
-    font-weight: bolder;
-    font-size: 1.75em;
-}  
-.shape-circle {
-    display: inline-block;
-    vertical-align: middle;
-    width: 32px;
-    height: 32px;
-    padding-left: 20px;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
-}  
-.shape-white {
-    background-color: #edf2f7;
-}  
-.shape-light-blue {
-    background-color: #92c5e4;
-}  
-.shape-blue {
-    background-color: #2e75bc;
-} 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-}
-
-/*
-svg {
-    width: 400px; height: 400px;
-    transform: rotate(-90deg);
-    background: #92c5ea;
-    border-radius: 80%;
-}
-*/
