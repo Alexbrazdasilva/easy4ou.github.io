@@ -114,3 +114,19 @@
 .accordion-title-button:not(.collapsed) {
   box-shadow: none;
 }
+
+[data-line] {
+  position: relative;
+}
+[data-line] .pseudo-line {
+  width: 1px;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: #dadada;
+  z-index: -10;
+}
+[data-line-step="last"] {
+  transition: height 280ms;
+}
