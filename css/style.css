@@ -15,6 +15,9 @@
     var(--primary-color)
   );
 }
+.bg-primary-color {
+  background-color: var(--darken-1-primary-color);
+}
 .navbar-item-link {
   position: relative;
   transition: 120ms;
@@ -124,7 +127,8 @@
   top: 100%;
   transform: translateX(-50%);
   position: absolute;
-  background-color: #dadada;
+  background-color: #ffffff5b;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.418), var(--primary-color));
   z-index: -10;
 }
 [data-line-step="last"] {
