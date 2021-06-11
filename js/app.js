@@ -16,7 +16,22 @@ All("[data-href], [data-mob-href]").forEach(({ dataset }) => {
     }
   );
 });
-
+All("[data-item-legend]").forEach(({ dataset }) => {
+  $(
+    `[data-item-legend=${dataset.itemLegend}], [data-legend=${dataset.itemLegend}]`
+  ).on("mouseenter", () =>
+    $(`.circle-svg-item[data-circle=${dataset.itemLegend}]`).addClass(
+      "selected"
+    )
+  );
+  $(
+    `[data-item-legend=${dataset.itemLegend}], [data-legend=${dataset.itemLegend}]`
+  ).on("mouseout", () =>
+    $(`.circle-svg-item[data-circle=${dataset.itemLegend}]`).removeClass(
+      "selected"
+    )
+  );
+});
 setYearInPage("[data-id=year]");
 setHeightLine();
 // Update on scroll
