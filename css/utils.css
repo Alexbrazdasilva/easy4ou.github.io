@@ -1,9 +1,10 @@
 :root {
   --primary-color: #2e75bc;
   --darken-1-primary-color: #183181;
+  --lighten-primary-color: #408dd4;
   --lighten-1-primary-color: #92c5ea;
   --lighten-2-primary-color: #74bcff;
-  --lighten-primary-color: #408dd4;
+  --lighten-3-primary-color: #ebf6ff;
   --secondary-color: #FD1268;
   --text-secondary-white: #e2e2e2;
   --text-secondary-black: #acacac;
@@ -28,6 +29,9 @@ body {
 }
 .text-primary-darken-1 {
   color: var(--darken-1-primary-color);
+}
+.text-primary-lighten-1 {
+  color: var(--lighten-primary-color);
 }
 .text-primary-lighten-2 {
   color: var(--lighten-2-primary-color);

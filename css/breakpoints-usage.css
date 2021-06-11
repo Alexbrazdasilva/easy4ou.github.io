@@ -107,6 +107,10 @@
     width: 100%;
     max-width: calc(100vw - 64px);
   }
+  [data-id="slide"] {
+    min-height: 700px !important;
+    height: 100% !important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */

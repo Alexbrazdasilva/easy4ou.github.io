@@ -18,6 +18,9 @@
 .bg-primary-color {
   background-color: var(--darken-1-primary-color);
 }
+.bg-primary-asset-2-color {
+  background-color: var(--lighten-3-primary-color);
+}
 .navbar-item-link {
   position: relative;
   transition: 120ms;
@@ -72,6 +75,9 @@
   --width-border: 10px;
 }
 /* Slider  */
+[data-id="slide"] {
+  min-height: 500px;
+}
 .slide,
 .carousel-inner {
   transition: height 390ms !important;
@@ -128,9 +134,68 @@
   transform: translateX(-50%);
   position: absolute;
   background-color: #ffffff5b;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.418), var(--primary-color));
+  background: var(--primary-color);
   z-index: -10;
 }
 [data-line-step="last"] {
   transition: height 280ms;
+}
+.svg-cover {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  position: relative;
+}
+/* Circle colors */
+.stroke-primary-color {
+  stroke: var(--primary-color);
+}
+.circle-svg-item {
+  stroke-width: 25px;
+  transition: 220ms ease-in-out;
+  --stroke-width: 50px;
+}
+.circle-svg-item[data-circle="one"] {
+  z-index: 6;
+  stroke: var(--darken-1-primary-color);
+}
+.circle-svg-item[data-circle="two"] {
+  stroke: var(--lighten-primary-color);
+  stroke-dasharray: var(--stroke-width), 56em;
+  stroke-dashoffset: calc(var(--stroke-width) * 5);
+}
+.circle-svg-item[data-circle="tree"] {
+  stroke-dasharray: var(--stroke-width), 56em;
+  stroke-dashoffset: calc(var(--stroke-width) * 4);
+  stroke: var(--lighten-2-primary-color);
+}
+.circle-svg-item:hover {
+  transition: 190ms ease-out;
+}
+.circle-svg-item.selected {
+  stroke-width: 40px;
+}
+.circle-svg-item[data-circle="one"].selected {
+  stroke-width: 15px !important;
+}
+/* Legends */
+.legend-circle {
+  list-style: none;
+}
+.circle-legend {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+  border-radius: 2px;
+  display: inline-block;
+}
+.circle-legend[data-legend="one"] {
+  background-color: var(--darken-1-primary-color);
+}
+.circle-legend[data-legend="two"] {
+  background-color: var(--lighten-primary-color);
+}
+.circle-legend[data-legend="tree"] {
+  background-color: var(--lighten-2-primary-color);
 }
