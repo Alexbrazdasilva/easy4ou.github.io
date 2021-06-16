@@ -103,6 +103,9 @@
     right: calc(var(--width-border) * -6);
   }
   /* Sizes  */
+  .svg-cover {
+    max-height: 200px;
+  }
   .max-width-md {
     width: 100%;
     max-width: calc(100vw - 64px);

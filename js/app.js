@@ -1,9 +1,9 @@
 import { $, All } from "./lib.js";
 import {
   scrollToElement,
-  dispatchOnScroll,
   setYearInPage,
   setHeightLine,
+  setDivLine,
 } from "./utils.js";
 
 All("[data-href], [data-mob-href]").forEach(({ dataset }) => {
@@ -33,11 +33,14 @@ All("[data-item-legend]").forEach(({ dataset }) => {
   );
 });
 setYearInPage("[data-id=year]");
-setHeightLine();
-// Update on scroll
-window.addEventListener("scroll", () =>
-  dispatchOnScroll({
-    dispatch: "dispatch-circle-animate",
-    target: "active-on-scroll",
-  })
-);
+
+const setLines = (target) => {
+  if(target.innerWidth > 767) {
+    setDivLine(true) 
+    setHeightLine(true)
+  } else {
+    setDivLine(false) 
+    setHeightLine(false)
+  }
+}
+window.onload = ({ currentTarget }) => setLines(currentTarget)

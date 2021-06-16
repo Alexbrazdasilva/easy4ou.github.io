@@ -76,6 +76,21 @@ class myLibQuery {
   style(prop, value) {
     this.element.style[prop] = value
   }
+  remove() {
+    this.element.remove()
+  }
+  hidden() {
+    this.element.style.display = "none"
+  }
+  show() {
+    this.element.style.display -= "none"
+  }
+  height() {
+    return this.element.clientHeight
+  }
+  width() {
+    return this.element.clientWidth
+  }
   // Position
   position(coordinate) {
     const directions = {

@@ -72,7 +72,7 @@ task("build-html", () =>
   src("*.html")
     .pipe(
       htmlMin({
-        collapseWhitespace: true,
+        collapseWhitespace: false,
         sortAttributes: true,
         sortClassName: true,
       })
@@ -91,14 +91,12 @@ task("inject-dependencies", () => {
       inject(js, {
         starttag: "<!-- inject:template:js -->",
         endtag: "<!-- endinject:js -->",
-        relative: true,
       })
     )
     .pipe(
       inject(css, {
         starttag: "<!-- inject:template:css -->",
         endtag: "<!-- endinject:css -->",
-        relative: true,
       })
     )
     .pipe(
