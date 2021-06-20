@@ -1,50 +1,150 @@
 <!DOCTYPE html>
-
-<html>
-  <style></style>
+<html lang="pt-br">
   <head>
-    <meta http-equiv=”Content-Type” content=”text/html; charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="#183181" name="theme-color">
+    <meta content="Aprenda dois anos em apenas dois meses com meu método de inglês 100% funcional" name="description">
+    <meta content="Professor Marcelo" name="author">
+    <meta content="ingles, idiomas, aprender ingles, ingles simplificado, easy4u" name="keywords">
+    <meta content="Aprenda 2 anos em 2 meses" property="og:title">
+    <meta content="author" property="og:type">
+    <meta content="Aprenda dois anos em apenas dois meses com meu método de inglês 100% funcional" name="og:description">
+    <meta content="Aprenda 2 anos em 2 meses" property="twitter:title">
+    <meta content="Aprenda dois anos em apenas dois meses com meu método de inglês 100% funcional" name="twitter:description">
+    <link href="./assets/brand/@brand-logo-x-small.png" rel="apple-touch-icon">
+    <link href="./assets/brand/@brand-logo-x-small.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- inject:template:css -->
+    <link rel="stylesheet" href="./css/budle.css">
+    <!-- endinject:css -->
+    <title>Easy4You - 2 anos em 2 meses</title>
   </head>
 
-  <body>
-    <section id="team">
+  <body class="bg-primary-asset-2-color">
+    <header class="bg-color-gradient header-banner-page" data-id-scroll-action="dispatch-circle-animate">
       <div class="container">
-        <div class="section-title-header">
-          <h3>APRENDA 2 ANOS EM 2 MESES</h3>
-        </div>
-
-        <!-- Futuro -> div class="student">
-                <div style="background-color: #183181;width: 90%"></div>
-                <a href="#">
-                    <img src="./img/studant.png" alt="...">
-                </a>
-            </div -->
-
-        <!--div class="info">
-                <h5>Clique em + para + detalhes.</h5>
-            </div-->
-
-        <!-- object data="./img/teacher-student.svg" type="image/svg+xml"></object -->
-
-        <div class="card">
-          <div class="card-header">
-            <img class="img-mini-card" src="./img/marcelo2-p.jpeg" alt="..." />
-            <h5 style="text-align: left; text-indent: 5px">
-              Marcelo Barreto (84 996 760 105), Professor <br />
-              "Aprenda inglês rápido, poupando tempo e dinheiro, sem ser chato!"
-            </h5>
+        <nav aria-label="main navigation" class="navbar navbar-expand-lg" role="navigation">
+          <div class="container-fluid py-3">
+            <img alt="Easy4You" class="navbar-brand" src="./assets/brand/@brand-logo-x-small.png">
+            <div class="collapse justify-content-end navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item px-2">
+                  <a class="text-white cursor-pointer nav-link navbar-item-link" data-href="about">Sobre</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="text-white cursor-pointer nav-link navbar-item-link" data-href="depositions">Depoimentos</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="text-white cursor-pointer nav-link navbar-item-link" data-href="faq">FAQ</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="px-4 btn rounded-pill btn-secondary onclick-outline-color-secondary onhover-scale-0-95" aria-label="Agendar Aula Experimental" href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0" rel="noopener" target="_blank" title="Agendar aula experimental">Aula Experimental</a>
+                </li>
+              </ul>
+            </div>
+            <span class="text-white d-inline-block d-lg-none px-1" aria-controls="menu-mobile" data-bs-toggle="offcanvas" href="#menu-mobile" role="button"><i class="material-icons">menu</i></span>
+            <div class="bg-white max-width-md offcanvas offcanvas-end" aria-labelledby="menu-mobileLabel" id="menu-mobile" data-id="navbar-mobile" tabindex="-1">
+              <div class="offcanvas-header">
+                <div class="col-12 d-flex flex-row justify-items-center">
+                  <span class="cursor-pointer" aria-label="Close" data-bs-dismiss="offcanvas">
+                    <i class="material-icons text-black-darken-2">close</i>
+                  </span>
+                  <h3 class="text-center flex-grow-1 h4">Menu</h3>
+                </div>
+              </div>
+              <nav>
+                <ul class="flex-column align-items-stretch navbar p-0">
+                  <li class="d-block nav-item py-0">
+                    <a class="px-4 d-block cursor-pointer nav-link py-3 text-black-darken-2" data-bs-dismiss="offcanvas" data-mob-href="about">Sobre</a>
+                  </li>
+                  <li class="d-block nav-item py-0">
+                    <a class="px-4 d-block cursor-pointer nav-link py-3 text-black-darken-2" data-bs-dismiss="offcanvas" data-mob-href="depositions">Depoimentos</a>
+                  </li>
+                  <li class="d-block nav-item py-0">
+                    <a class="px-4 d-block cursor-pointer nav-link py-3 text-black-darken-2" data-bs-dismiss="offcanvas" data-mob-href="faq">FAQ</a>
+                  </li>
+                  <li class="d-block nav-item py-0 px-2">
+                    <a class="px-4 d-block btn btn-secondary onclick-outline-color-secondary onhover-scale-0-95 py-2 rounded-pill" aria-label="Agendar Aula Experimental" href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0" rel="noopener" target="_blank" title="Agendar aula experimental">Aula Experimental</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div class="card-body">
-            <p class="h5 px-3" style="text-indent: 30px">
+        </nav>
+        <div class="banner">
+          <ul class="justify-content-center d-flex align-items-center m-0 p-0 slider-container">
+            <li class="text-center slide-item" data-id-slide="0">
+              <div class="text-white mb-md-0 mb-5 pb-lg-5 text-slide">
+                <span class="h5">Aprenda</span>
+                <h1 class="title text-strong h1 h2-sm">
+                  2 anos <br class="d-inline-block d-sm-none">
+                  em <br class="d-none d-sm-inline-block">
+                  apenas 2 meses
+                </h1>
+                <p class="description text-white-darken-2">
+                  Intensivo de inglês com quem entende do assunto,
+                  <br class="d-none d-sm-inline-block">direto ao ponto com
+                  aulas individuais e sem enrolação.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <span class="next-section">
+          <i class="text-white cursor-pointer animate-vertical-icon material-icons">expand_more</i>
+        </span>
+      </div>
+    </header>
+    <main class="container">
+      <section class="bg-primary-color px-4 card-with-chip rounded shadow py-5 my-5">
+        <span class="chip align-centered-chip chip-primary">Método</span>
+        <div class="justify-content-center row">
+          <div class="flex-column d-flex col-md-5">
+            <img alt="Estudante" class="img-asset-card full-width mb-4 px-3" src="./assets/svg/udr_student.svg">
+            <h3 class="text-center text-strong h3 text-primary-lighten-2">
+              Você
+            </h3>
+            <p class="text-white text-center">
+              Acumula informações, <br>
+              partes de um conhecimento, <br>
+              (peças de um quebra-cabeça)
+            </p>
+          </div>
+          <div class="justify-content-center d-flex align-items-center col-md-1 flex-column flex-grow-0 py-4">
+            <i class="material-icons icon-action-big h3 rotate-md text-primary-lighten-2">swap_horiz</i>
+          </div>
+          <div class="flex-column d-flex col-md-5">
+            <img alt="Professor" class="img-asset-card full-width mb-4 px-3" src="./assets/svg/udr_professor.svg">
+            <h3 class="text-center text-strong h3 text-primary-lighten-2">
+              Eu
+            </h3>
+            <p class="text-white text-center">
+              Contextualiza a informação, <br>e transforma em conhecimento
+              <br>
+              (monta o quebra-cabeças)
+            </p>
+          </div>
+        </div>
+        <span class="z-index--1 circle small-border circle-x-small align-circle-b-l op-10"></span>
+        <span class="z-index--1 circle op-25 small-border circle-x-offset-6 align-circle-b-l circle-x-small circle-y-offset-1"></span>
+      </section>
+      <div class="col-12 divider py-1"></div>
+      <section class="px-4 card-with-chip py-5 my-5" data-id-scroll-action="about">
+        <span class="chip align-centered-chip text-primary-lighten-2"><i class="material-icons icon-action-big my-4">format_quote</i>
+        </span>
+        <div class="justify-content-center align-items-center row pt-5">
+          <div class="justify-content-center d-flex col-lg-4 col-md-6 img-container">
+            <img alt="Professor Marcelo" class="rounded-pill img-asset-card-md" src="./assets/photos/teacher-marcelo.jpeg">
+          </div>
+          <div class="text-center text-md-start align-items-center col-lg-7 col-md-6 justify-content-center mt-md-3 pt-4 pt-md-0 px-lg-3">
+            <span class="text-primary-lighten-1 h4 text-strong">Marcelo</span>
+            <h3 class="text-primary text-strong title">Professor de inglês</h3>
+            <p class="text-dark">
               Olá, sou Marcelo e meus +20 anos de experiência mostram que
               ninguém quer ficar 2 anos na escola pra sair falando o verbo "to
               be” perfeito sem comunicar nada. Fica somente no "I'm ... I'm ..."
@@ -52,13 +152,13 @@
               saber encontrar o banheiro assim é complicado; espero que seja um
               bom mímico.
             </p>
-            <p class="h5 px-3" style="text-indent: 30px">
+            <p class="text-dark">
               Criei então meu estilo (E.A.S.Y. 4U), feito sob medida para suas
               necessidades, a partir das suas respostas ao aprendizado continuo.
               Só precisa aprender uma vez, sem decoreba, de forma prática para
               toda a vida.
             </p>
-            <p class="h5 px-3" style="text-indent: 30px">
+            <p class="text-dark">
               Aprenda o suficiente para comer, beber (ir ao banheiro), viajar,
               passar no Enem, mestrado (e afins) até o mês que vem e não na
               próxima encarnação. Fale comigo no Whats e marque uma aula
@@ -67,553 +167,449 @@
               precisar. Nada mal para 90 minutos de aula!
             </p>
           </div>
+          <div class="col-12 divider my-5"></div>
+          <div class="col-12 d-flex justify-content-center card-with-chip mt-5">
+            <span class="px-4 btn rounded-pill btn-sm chip chip-primary cursor-default" data-line>Aprendendo em níveis
+              <div class="pseudo-line"></div>
+            </span>
+          </div>
         </div>
-
-        <p></p>
-
-        <!--figure-->
-        <div class="img-teacher-student">
-          <svg viewBox="0 0 400 360">
-            <!--object data="./img/teacher-student.svg" type="image/svg+xml"></object-->
-            <image
-              xlink:href="./img/teacher-student.svg"
-              x="0"
-              y="0"
-              width="400"
-              height="360"
-            />
+        <span class="z-index--1 circle op-25 align-circle-b-l circle-middle circle-x-offset-2 circle-y-offset-2 middle-border op-sm-10"></span>
+        <span class="z-index--1 circle op-25 small-border circle-x-small align-circle-b-r align-circle-sm-b-l"></span>
+      </section>
+      <section class="bg-primary-color px-4 card-with-chip rounded shadow z-index-3 py-1 py-md-5">
+        <span class="chip align-centered-chip chip-primary">Nível 1</span>
+        <div class="justify-content-center row align-content-center pb-md-5 pb-4 py-5">
+          <h4 class="text-white text-center text-strong col-12 col-md-4 mb-4 mb-md-0 title-middle">
+            Basic,<br>
+            Top 5%
+          </h4>
+          <p class="text-white align-self-center pe-0 pe-md-5 col-12 col-md-8">
+            Você aprende em 2 meses comigo o equivalente a 2 anos de uma escola
+            de línguas. Isso é o suficiente para viajar a lazer, fazer a prova
+            do Enem, defender teses de mestrado e doutorado aqui no Brasil. Com
+            isso o aluno fica no Top 5% ou seja, mais fluente que 95 % dos
+            brasileiros.
+            <span class="text-primary-lighten-3">Fique surpreso com o seu aprendizado com no mínimo 2 encontros
+              semanais de 1 hora e meia</span>.
+          </p>
+        </div>
+      </section>
+      <div class="col-12 divider py-5"></div>
+      <section class="bg-primary-color px-4 card-with-chip rounded shadow z-index-3 py-1 py-md-5" data-line-step="one">
+        <span class="chip align-centered-chip chip-primary">Nível 2</span>
+        <div class="justify-content-center row align-content-center pb-md-5 pb-4 py-5">
+          <h4 class="text-white text-center text-strong col-12 col-md-4 mb-4 mb-md-0 title-middle">
+            Intermediate,<br>
+            Top 2%
+          </h4>
+          <p class="text-white align-self-center pe-0 pe-md-5 col-12 col-md-8">
+            Você termina o intermediário a partir de 4 meses. E com isso você
+            consegue: Comunicar em inglês com falantes não nativos; fazer
+            entrevistas de emprego; assistir filmes sem legendas; fazer
+            perguntas ao final de uma palestra; participar de vídeo conferência;
+            defender sua tese no exterior; falar ao telefone; fazer negócios.
+            Com isso você fica no Top 2% de fluência.
+            <span class="text-primary-lighten-3">Recomenda-se três encontros semanais, de uma hora e meia
+              cada</span>.
+          </p>
+        </div>
+        <div class="z-index--1 circle-link circle-primary align-circle-centered" data-line-step="last">
+          <span class="z-index--1 link-square-rounded"></span>
+        </div>
+        <span class="z-index--1 circle op-25 small-border circle-x-offset-6 align-circle-m-l circle-small"></span>
+      </section>
+      <div class="col-12 divider py-3"></div>
+      <div class="justify-content-center row z-index-3 my-5 px-3 px-md-0">
+        <aside class="col-12 card-with-chip bg-primary-color col-md-5 rounded shadow z-index-3 px-4">
+          <span class="chip align-centered-chip chip-primary-asset-2" data-line="review">
+            Review
+          </span>
+          <p class="text-white px-2 px-md-0 py-5 text-sm-center">
+            Revisão geral necessária para aqueles que pretendem continuar os
+            estudos, geralmente se faz menos de um mês. Em tempos de pandemia
+            (onde brasileiros não podem viajar) é o substituto do estágio.
+          </p>
+        </aside>
+        <div class="col-12 divider py-3 col-md-1 d-md-inline-block"></div>
+        <aside class="col-12 card-with-chip bg-primary-color col-md-5 rounded shadow z-index-3 px-4">
+          <span class="chip align-centered-chip chip-primary-asset-2" data-line="stage">Estágio</span>
+          <p class="text-white px-2 px-md-0 py-5 text-sm-center">
+            Estágio é uma recomendação de uma viagem solo por duas semanas num
+            pais de inglesa. Algo como cruzar os eua de costa a costa de trem ou
+            um tour pela Inglaterra de ônibus.
+          </p>
+        </aside>
+      </div>
+      <div class="col-12 divider py-3 card-with-chip mt-3">
+        <span class="chip align-centered-chip chip-primary" data-line="level-tree">
+          Nível 3
+          <div class="anouther-pseudo-line z-index-1"></div>
+        </span>
+      </div>
+      <section class="px-4 position-relative px-lg-0 z-index-3">
+        <div class="justify-content-center row align-content-center pb-md-5 py-4 px-0 z-index-3">
+          <article class="col-12 card-with-chip bg-primary-color col-md-5 rounded shadow z-index-3 position-relative px-3 py-5">
+            <h3 class="text-white text-center text-strong pt-3">
+              Conversation
+            </h3>
+            <p class="text-white text-center align-self-center">
+              Conversation é uma aula por semana/quinzena disponível somente
+              para quem terminou no mínimo o review, já tem um bom nível na
+              língua e quer aprimorar a fala e/ou desenferrujar. Pode ser feito
+              isolado ou em conjunto com o avançado e serve para quem quer
+              manter o inglês afiado. É o único módulo que não tem um tempo
+              provável para término, você faz o quanto você precisa.
+              <span class="text-primary-lighten-3">Recomendo fazer pelo menos um mês</span>.
+            </p>
+          </article>
+          <div class="col-12 col-md-1 py-3">
+            <span class="d-none d-md-block circle-link circle-primary align-circle-centered top-circle-align" data-line-step="end">
+              <span class="link-square-rounded square-rounded-link" data-line-step="link-squares"></span>
+            </span>
+          </div>
+          <article class="col-12 card-with-chip bg-primary-color col-md-5 rounded shadow z-index-3 position-relative px-3 py-5">
+            <h3 class="text-white text-center text-strong pt-3">
+              Advanced, Top 1%
+            </h3>
+            <p class="text-white text-center align-self-center">
+              Você termina a partir de 4 meses e comunica-se de forma plena.
+              Recomendo fazer em conjunto com o conversation assim como passar
+              pelo <span class="text-primary-lighten-3">"estágio"</span> no
+              exterior para terminar de forma plena e chegar no
+              <span class="text-primary-lighten-3">top 1%</span>.
+            </p>
+          </article>
+        </div>
+      </section>
+      <div class="col-12 divider py-5"></div>
+      <section class="bg-primary-color card-with-chip rounded shadow py-1 py-md-5 carousel slide" data-id-scroll-action="depositions" data-bs-ride="carousel" data-id="slide">
+        <span class="chip align-centered-chip chip-primary">
+          O que dizem sobre?
+        </span>
+        <span class="z-index--1 circle-link circle-primary d-md-block d-none top-align" data-line data-line-step="about">
+          <span class="anouther-pseudo-line" data-line-step="about-line"></span>
+        </span>
+        <aside class="my-3">
+          <div class="carousel-indicators position-absolute py-4 z-index-3">
+            <span class="circle-item active" aria-label="Slide 1" data-bs-slide-to="0" data-bs-target="[data-id=slide]" aria-current="true"></span>
+            <span class="circle-item" aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="[data-id=slide]"></span>
+            <span class="circle-item" aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="[data-id=slide]"></span>
+            <span class="circle-item" aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="[data-id=slide]"></span>
+            <span class="circle-item" aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="[data-id=slide]"></span>
+          </div>
+        </aside>
+        <div class="align-content-center carousel-inner d-flex flex-row flex-wrap z-index-2">
+          <div class="bg-primary-color px-4 py-5 carousel-item active">
+            <div class="col-12 d-flex justify-content-center flex-wrap">
+              <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
+                <img alt="Nídia, aluna" class="rounded-pill img-asset-card" src="./assets/photos/nidia.jpeg">
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <h3 class="text-white text-center text-strong text-md-start">
+                  Nídia
+                </h3>
+                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                  Professora - fez o intermediário em 2018
+                </h5>
+                <p class="text-white align-self-center pe-0 pe-md-5 text-justify">
+                  Depois de um ano e meio na escola, constatei que não era o
+                  ideal em disponibilidade e aprendizado. Com Marcelo aprendi em
+                  um mês de aulas o equivalente a ano e meio de uma escola, a
+                  exigência foi de que tivesse pelo ao menos duas aulas por
+                  semana e 15 minutos de estudo diário. Foi um aprendizado leve,
+                  descontraído, sem decorebas, estimulando a compreensão da
+                  língua. Ele garantiu uma fluidez no aprendizado, onde a
+                  elaboração das frases e dos diálogos vai perdendo a
+                  preocupação com a rigidez das regras gramaticais e passam a
+                  ser formulados com mais naturalidade. No final dos dois meses
+                  consegui atingir meu objetivo que me permitisse uma boa
+                  comunicação em viagens.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-color px-4 py-5 carousel-item pb-4 pb-md-5">
+            <div class="col-12 d-flex justify-content-center flex-wrap">
+              <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
+                <img alt="Graça, médica" class="rounded-pill img-asset-card" src="./assets/photos/graca.jpeg">
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <h3 class="text-white text-center text-strong text-md-start">
+                  Graça
+                </h3>
+                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                  Médica - terminou o intermediário em 2020
+                </h5>
+                <p class="text-white align-self-center pe-0 pe-md-5 text-justify">
+                  Quando eu conheci Marcelo, não sabia que ele era professor,
+                  então conversando eu falei que tinha jogado a toalha,
+                  desistido do Inglês. Ele falou que tinha um método próprio e
+                  se eu não queria experimentar. Experimentei e gostei muito,
+                  por isso recomendo. As aulas são muito agradáveis e além de
+                  Inglês também aprendi cultura geral e como analisar uma
+                  fotografia (outro curso dele). Adquiri segurança no Inglês e
+                  estou pensando de fazer uma viagem sozinha para Inglaterra ou
+                  Estados Unidos por sugestão dele.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-color px-4 py-5 carousel-item pb-4 pb-md-5">
+            <div class="col-12 d-flex justify-content-center flex-wrap">
+              <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
+                <img alt="Pedro, aluno" class="rounded-pill img-asset-card" src="./assets/photos/pedro.jpeg">
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <h3 class="text-white text-center text-strong text-md-start">
+                  Pedro
+                </h3>
+                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                  Mestrando em Planejamento Urbano - terminou o básico em 2019
+                </h5>
+                <p class="text-white align-self-center pe-0 pe-md-5 text-justify">
+                  Convivo com inglês desde os 7 numa relação de amor e ódio.
+                  Ódio por ter avançado pouco em 15 anos sem ter o básico
+                  consistente. Na aula experimental entendi que podemos aprender
+                  num curto espaço de tempo. O método e a motivação que Marcelo
+                  utiliza com os alunos é o da sinceridade, afinal é o seu
+                  dinheiro e tempo que está sendo investido e ele não tem
+                  intenção de ficar se prorrogando, como nas grandes escolas.
+                  Aula particular que deixa qualquer aluno a vontade pra
+                  intervir e questionar e seu progresso depende daquilo que você
+                  consegue render. Hoje afirmo: é possível falar inglês em pouco
+                  tempo. Basta dedicação e sinceridade sua consigo mesmo, com
+                  seu dinheiro e com seu tempo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-color px-4 py-5 carousel-item pb-4 pb-md-5">
+            <div class="col-12 d-flex justify-content-center flex-wrap">
+              <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
+                <img alt="Suyane, aluna" class="rounded-pill img-asset-card" src="./assets/photos/suyane.jpeg">
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <h3 class="text-white text-center text-strong text-md-start">
+                  Suyane
+                </h3>
+                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                  Doutoranda em comunicação - é aluna do intermediário
+                </h5>
+                <p class="text-white align-self-center pe-0 pe-md-5 text-justify">
+                  Aprender inglês é prioridade para o trabalho e doutorado pois
+                  sempre interajo com estrangeiros. Investir em um professor
+                  particular foi uma das ações mais acertadas que fiz. Método
+                  eficiente e uma rotina diferente torna o aprendizado
+                  interessante. Com o tempo, isso me despertou para outro
+                  idioma, outra cultura, que hoje é momento de relaxamento em
+                  plena pandemia. Foi essa metodologia que mais funcionou pra
+                  mim, desde entender padrões até o sentido da comunicação
+                  efetiva. A promessa é que ao final do básico eu entenda o
+                  diálogo de uma reunião e com o intermediário avance para
+                  interagir de forma profissional.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-color px-4 py-5 carousel-item pb-4 pb-md-5">
+            <div class="col-12 d-flex justify-content-center flex-wrap">
+              <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
+                <img alt="Mônica, aluna" class="rounded-pill img-asset-card" src="./assets/photos/monica.jpeg">
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <h3 class="text-white text-center text-strong text-md-start">
+                  Mônica
+                </h3>
+                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                  Servidora pública federal aposentada - terminou o
+                  intermediário em 2017
+                </h5>
+                <p class="text-white align-self-center pe-0 pe-md-5 text-justify">
+                  Na adolescência fiz intercâmbio e conseguia falar muito bem,
+                  ao retornar deixei de praticar e acabei perdendo a fluência.
+                  Resolvi voltar aos cursos de inglês e concluí no IFRN, mas não
+                  me sentia apta a falar fluente. Foi aí que conheci Marcelo por
+                  intermédio de meu irmão que estava estudando com ele e deu
+                  ótimas informações sobre o método. Em quase um mês estudando
+                  com Marcelo eu obtive uma evolução muito grande, fiquei muito
+                  surpresa. Ele faz o aluno ler muito com a voz alta, na medida
+                  que você vai mudando de lição a gramática vai se inserindo e
+                  você vai aprendendo de uma forma natural sem dificuldade
+                  alguma. É o método mais eficiente dentre os que já tive
+                  oportunidade de conhecer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev z-index-3" data-bs-target="[data-id=slide]" type="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next z-index-3" data-bs-target="[data-id=slide]" type="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <span class="circle op-25 small-border circle-x-small align-circle-b-r align-circle-sm-b-l circle-y-push-4 d-md-block d-none z-index-1"></span>
+        <span class="circle op-25 align-circle-b-l circle-middle big-border circle-sm-x-small circle-y-push-6 z-index-1"></span>
+      </section>
+      <div class="col-12 divider my-5 py-2"></div>
+      <section class="bg-primary-color px-4 card-with-chip rounded shadow z-index-3 py-5">
+        <span class="chip align-centered-chip chip-primary px-3">Sobre o tempo de aprendizado</span>
+        <div class="justify-content-center align-items-center row">
+          <svg class="col svg-cover" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <g class="d-none d-md-block">
+              <circle class="circle-svg-item circle-svg-sm-item fill-primary-color" cx="200" cy="190" data-circle="one" fill="transparent" r="150" stroke="inset"></circle>
+              <circle class="circle-svg-item circle-svg-sm-item fill-primary-color" cx="200" cy="190" data-circle="two" fill="transparent" r="150" stroke="inset"></circle>
+              <circle class="circle-svg-item circle-svg-sm-item fill-primary-color" cx="200" cy="190" data-circle="tree" fill="transparent" r="150" stroke="inset"></circle>
+            </g>
+            <g class="d-md-none">
+              <line class="line-svg-item" data-line="primary" stroke="inset" stroke-width="10" x1="35" x2="35" y1="0" y2="150"></line>
+              <line class="line-svg-item" data-line="anouther" stroke="inset" stroke-width="10" x1="65" x2="65" y1="120" y2="150"></line>
+              <line class="line-svg-item" data-line="secondary" stroke="inset" stroke-width="10" x1="95" x2="95" y1="120" y2="150"></line>
+            </g>
           </svg>
-        </div>
-        <!--/figure-->
-
-        <div class="card">
-          <div class="card-header">
-            <img class="img-mini-card" src="./img/graca-p.jpeg" alt="..." />
-            <h5 style="text-align: left; text-indent: 5px">
-              Graça (84 999 852 109) Médica, terminou o intermediário em 2020
-            </h5>
-          </div>
-          <div class="card-body">
-            <p class="h5 px-3" style="text-indent: 30px">
-              Quando eu conheci Marcelo, não sabia que ele era professor, então
-              conversando eu falei que tinha jogado a toalha, desistido do
-              Inglês. Ele falou que tinha um método próprio e se eu não queria
-              experimentar. Experimentei e gostei muito, por isso recomendo. As
-              aulas são muito agradáveis e além de Inglês também aprendi cultura
-              geral e como analisar uma fotografia (outro curso dele). Adquiri
-              segurança no Inglês e estou pensando de fazer uma viagem sozinha
-              para Inglaterra ou Estados Unidos por sugestão dele.
+          <div class="col-12 col-md-6 legend-circle-container">
+            <h3 class="text-white text-center text-strong text-md-start h4">
+              Quantas horas/aula eu preciso?
+            </h3>
+            <p class="text-white text-center text-md-start">
+              A maioria precisa entre 25 e 50h/aula para terminar o nível básico
+              e isso é feito em 2 meses com no mínimo dois encontros semanais de
+              90 minutos cada.
             </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="accordion-tab-1-heading-1">
-            <h5 class="px-3" style="text-align: center">Como são as aulas?</h5>
-          </div>
-          <div class="collapse show" id="accordion-tab-1-content-1">
-            <div class="card-body">
-              <p class="h5 px-3" style="text-indent: 30px">
-                Individuais sempre, geralmente no meu domicílio (e agora, também
-                por videoconferência), com frequência mínima de dois encontros
-                semanais de 90 minutos cada. Em dois meses, você aprende o
-                básico (2 anos de uma escola) e serve para viagens a
-                lazer/Enem/mestrado. Peço somente 15 minutos diários de leitura.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <img class="img-mini-card" src="./img/nidia-p.jpeg" alt="..." />
-            <h5 style="text-align: left; text-indent: 5px">
-              Nídia (84 988 696 722) Professora, fez o intermediário em 2018
-            </h5>
-          </div>
-          <div class="card-body">
-            <p class="h5 px-3" style="text-indent: 30px">
-              Depois de um ano e meio na escola, constatei que não era o ideal
-              em disponibilidade e aprendizado. Com Marcelo aprendi em um mês de
-              aulas o equivalente a ano e meio de uma escola, a exigência foi de
-              que tivesse pelo ao menos duas aulas por semana e 15 minutos de
-              estudo diário. Foi um aprendizado leve, descontraído, sem
-              decorebas, estimulando a compreensão da língua. Ele garantiu uma
-              fluidez no aprendizado, onde a elaboração das frases e dos
-              diálogos vai perdendo a preocupação com a rigidez das regras
-              gramaticais e passam a ser formulados com mais naturalidade. No
-              final dos dois meses consegui atingir meu objetivo que me
-              permitisse uma boa comunicação em viagens.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="accordion-tab-1-heading-1">
-            <h5>Quantos níveis existem?</h5>
-          </div>
-          <div class="collapse show" id="accordion-tab-1-content-1">
-            <div class="card-body">
-              <p class="h5 px-3" style="text-indent: 30px">
-                <b>Três níveis</b>, sendo o intermediário para trabalho/viagens
-                a negócio e o avançado para morar no exterior. Esses três são
-                sequenciais e existe um paralelo, <i>conversation</i>, que pode
-                ser feito a partir do final do intermediário.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!--div class="d-flex justify-content-center align-content-center">
-                <div>
-                    <img src="./img/top5.png">
-                </div>
-                <div class="card-body" style="margin-left: 10px; min-width: 50%;">
-                    <h5 style="margin-left: 10px;">
-                        Você aprende em 2 meses o equivalente a 2 anos. Isso é o suficiente para viajar a lazer, fazer
-                        a prova do Enem, defender teses de mestrado e doutorado aqui no Brasil. Com isso o aluno fica no
-                        Top 5% ou seja, mais fluente que 95 % dos brasileiros. Fique surpreso com o seu aprendizado
-                        com no mínimo 2 encontros semanais de 1 hora e meia.
-                    </h5>
-                </div>
-            </div-->
-
-        <p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px">
-          <a
-            class="btn"
-            data-toggle="collapse"
-            href="#top5"
-            role="button"
-            aria-expanded="true"
-            aria-controls="collapseExample"
-            style="
-              margin-top: 12px;
-              border: 0px;
-              width: 100%;
-              background-color: #183181;
-            "
-          >
-            <img src="./img/top5.png" />
-          </a>
-        </p>
-        <div>
-          <!-- class="collapse" id="top5" -->
-          <div class="card-body a">
-            <p class="h5 px-3" style="text-indent: 30px">
-              Você aprende em 2 meses comigo o equivalente a 2 anos de uma
-              escola de línguas. Isso é o suficiente para viajar a lazer, fazer
-              a prova do Enem, defender teses de mestrado e doutorado aqui no
-              Brasil. Com isso o aluno fica no Top 5% ou seja, mais fluente que
-              95 % dos brasileiros. Fique surpreso com o seu aprendizado com no
-              mínimo 2 encontros semanais de 1 hora e meia.
-            </p>
-          </div>
-        </div>
-
-        <p style="margin-top: 0px; margin-bottom: 0px">
-          <a
-            class="btn btn-primary"
-            data-toggle="collapse"
-            href="#top2"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-            style="
-              margin-top: 0px;
-              margin-bottom: 0px;
-              border: 0px;
-              width: 100%;
-              background-color: #183181;
-            "
-          >
-            <img src="./img/top2.png" />
-          </a>
-        </p>
-        <div>
-          <!-- class="collapse" id="top2"-->
-          <div class="card-body a">
-            <p class="h5 px-3" style="text-indent: 30px">
-              Você termina o intermediário a partir de 4 meses. E com isso você
-              consegue: Comunicar em inglês com falantes não nativos; fazer
-              entrevistas de emprego; assistir filmes sem legendas; fazer
-              perguntas ao final de uma palestra; participar de vídeo
-              conferência; defender sua tese no exterior; falar ao telefone;
-              fazer negócios. Com isso você fica no Top 2% de fluência.
-              Recomenda-se três encontros semanais, de uma hora e meia cada.
-            </p>
-          </div>
-        </div>
-
-        <p style="margin-top: 0px; margin-bottom: 0px">
-          <a
-            class="btn"
-            data-toggle="collapse"
-            href="#top2"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-            style="
-              margin-top: 0px;
-              margin-bottom: 0px;
-              border: 0px;
-              width: 100%;
-            "
-          >
-            <img src="./img/review.png" height="81" />
-          </a>
-        </p>
-        <div>
-          <!-- class="collapse" id="top2"-->
-          <div class="card-body a">
-            <p class="h5 px-3" style="text-indent: 30px">
-              <b>Estágio</b> é uma recomendação de uma viagem solo por duas
-              semanas num país de língua inglesa. Algo como cruzar os EUA de
-              costa a costa de trem ou um tour pela Inglaterra de ônibus.
-            </p>
-            <p class="h5" style="text-indent: 30px">
-              <b>Review</b> revisão geral nescessária para aqueles que pretendem
-              continuar os estudos, geralmente se faz em menos de um mês. Em
-              tempos de pandemia (onde não brasileiro não pode viajar) é o
-              substituto do estágio.
-            </p>
-          </div>
-        </div>
-
-        <p style="margin-top: 0px; margin-bottom: 0px">
-          <a
-            class="btn btn-primary"
-            data-toggle="collapse"
-            href="#top1"
-            role="button"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-            style="
-              margin-top: 0px;
-              margin-bottom: 0px;
-              border: 0px;
-              width: 100%;
-              background-color: #183181;
-            "
-          >
-            <img src="./img/top-1-or-conversation.png" height="81" />
-          </a>
-        </p>
-        <div>
-          <!-- style="margin-bottom: .5rem;" class="collapse" id="top1"-->
-          <div class="card-body a" style="margin-bottom: 16px">
-            <p class="h5 px-3" style="text-indent: 30px">
-              <b>Conversation</b> é uma aula por semana/quinzena disponível
-              somente para quem terminou no mínimo o review. Para quem já tem um
-              bom nível na língua e quer aprimorar a fala e/ou desenferrujar.
-            </p>
-            <p class="h5 px-3" style="text-indent: 30px">
-              <b>Advanced</b> termina a partir de 4 meses para comunicação de
-              forma plena, no entanto, para estar no top 1% de fluência nacional
-              é recomendado o "estágio no exterior" de no mínimo duas semanas.
-              Pode ser feito em conjunto com o conversation para melhor
-              resultado.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="accordion-tab-1-heading-1">
-            <h5 style="text-align: center">
-              Eu já sei algo, preciso começar do básico?
-            </h5>
-          </div>
-          <div
-            class="collapse show"
-            id="accordion-tab-1-content-1"
-            aria-labelledby="accordion-tab-1-heading-1"
-            data-parent="#accordion-tab-1"
-          >
-            <div class="card-body">
-              <h5 style="text-indent: 30px">
-                Todos começam do básico, quanto mais fluente mais rápido. Comigo
-                você adquire tempo de aprendizado.
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <img class="img-mini-card" src="./img/pedro-p.jpeg" alt="..." />
-            <h5 style="text-align: left; text-indent: 5px">
-              Pedro (84 991 016 202) Mestrando em planejamento urbano, terminou
-              o básico em 2019
-            </h5>
-          </div>
-          <div class="card-body">
-            <p class="h5 px-3" style="text-indent: 30px">
-              Convivo com inglês desde os 7 numa relação de amor e ódio. Ódio
-              por ter avançado pouco em 15 anos sem ter o básico consistente. Na
-              aula experimental entendi que podemos aprender num curto espaço de
-              tempo. O método e a motivação que Marcelo utiliza com os alunos é
-              o da sinceridade, afinal é o seu dinheiro e tempo que está sendo
-              investido e ele não tem intenção de ficar se prorrogando, como nas
-              grandes escolas. Aula particular que deixa qualquer aluno a
-              vontade pra intervir e questionar e seu progresso depende daquilo
-              que você consegue render. Hoje afirmo: é possível falar inglês em
-              pouco tempo. Basta dedicação e sinceridade sua consigo mesmo, com
-              seu dinheiro e com seu tempo.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="accordion-tab-1-heading-1">
-            <h5 style="text-align: center">
-              Preciso viajar e meu horário muda sempre, como faço?
-            </h5>
-          </div>
-          <div
-            class="collapse show"
-            id="accordion-tab-1-content-1"
-            aria-labelledby="accordion-tab-1-heading-1"
-            data-parent="#accordion-tab-1"
-          >
-            <div class="card-body">
-              <p class="h5 px-3" style="text-indent: 30px">
-                O ideal é que se faça de forma contínua, não sendo possível e
-                avisando até a véspera, mudamos o dia ou pausamos as aulas.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <img class="img-mini-card" src="./img/suyane-p.jpeg" alt="..." />
-            <h5 style="text-align: left; text-indent: 5px">
-              Suyane (84 991 264 414) doutoranda em comunicação, é aluna do
-              intermediário
-            </h5>
-          </div>
-          <div class="card-body">
-            <p class="h5 px-3" style="text-indent: 30px">
-              Aprender inglês é prioridade para o trabalho e doutorado pois
-              sempre interajo com estrangeiros. Investir em um professor
-              particular foi uma das ações mais acertadas que fiz. Método
-              eficiente e uma rotina diferente torna o aprendizado interessante.
-              Com o tempo, isso me despertou para outro idioma, outra cultura,
-              que hoje é momento de relaxamento em plena pandemia. Foi essa
-              metodologia que mais funcionou pra mim, desde entender padrões até
-              o sentido da comunicação efetiva. A promessa é que ao final do
-              básico eu entenda o diálogo de uma reunião e com o intermediário
-              avance para interagir de forma profissional.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="accordion-tab-1-heading-1">
-            <h5 style="text-align: center">Quanto é para terminar o básico?</h5>
-          </div>
-          <div
-            class="collapse show"
-            id="accordion-tab-1-content-1"
-            aria-labelledby="accordion-tab-1-heading-1"
-            data-parent="#accordion-tab-1"
-          >
-            <div class="card-body">
-              <p class="h5 px-3" style="text-indent: 30px">
-                Depende (entre outros fatores) do seu conhecimento linguístico,
-                cultural, capacidade de aprendizado, forma de pagamento, local e
-                o principal: sua determinação. Para saber o seu valor, precisa
-                fazer uma aula experimental, onde analiso e faço sua previsão. O
-                gráfico abaixo explica melhor.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <img class="img-mini-card" src="./img/monica-p.jpeg" alt="..." />
-            <h5 style="text-align: left; text-indent: 5px">
-              Mônica (84 999 840 180) Servidora pública federal aposentada,
-              terminou o intermediário em 2017
-            </h5>
-          </div>
-          <div class="card-body">
-            <p class="h5 px-3" style="text-indent: 30px">
-              Na adolescência fiz intercâmbio e conseguia falar muito bem, ao
-              retornar deixei de praticar e acabei perdendo a fluência. Resolvi
-              voltar aos cursos de inglês e concluí no IFRN, mas não me sentia
-              apta a falar fluente. Foi aí que conheci Marcelo por intermédio de
-              meu irmão que estava estudando com ele e deu ótimas informações
-              sobre o método. Em quase um mês estudando com Marcelo eu obtive
-              uma evolução muito grande, fiquei muito surpresa. Ele faz o aluno
-              ler muito com a voz alta, na medida que você vai mudando de lição
-              a gramática vai se inserindo e você vai aprendendo de uma forma
-              natural sem dificuldade alguma. É o método mais eficiente dentre
-              os que já tive oportunidade de conhecer.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="accordion-tab-1-heading-1">
-            <h5 style="text-align: center">Se eu me esforçar, gasto menos?</h5>
-          </div>
-          <div
-            class="collapse show"
-            id="accordion-tab-1-content-1"
-            aria-labelledby="accordion-tab-1-heading-1"
-            data-parent="#accordion-tab-1"
-          >
-            <div class="card-body">
-              <p class="h5 px-3" style="text-indent: 30px">
-                Sim, bons alunos terminam antes do previsto, além de devolver o
-                que não foi usado. Existem descontos e tudo pode ser no cartão
-                em até 12X.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <figure>
-          <div class="figure-content">
-            <svg
-              width="100%"
-              height="100%"
-              viewBox="0 0 42 42"
-              class="donut"
-              aria-labelledby="hours-title hours-desc"
-              role="img"
-            >
-              <title id="hours-title">
-                Horas necessárias para avançar de nível
-              </title>
-              <desc id="hours-desc">
-                Gráfico Donut demonstrando tempo em horas para avançar no métido
-                E.A.S.Y.4.u
-              </desc>
-              <circle
-                class="donut-hole"
-                cx="20"
-                cy="20"
-                r="15.91549430918954"
-                fill="transparent"
-              ></circle>
-              <circle
-                class="donut-ring"
-                cx="20"
-                cy="20"
-                r="15.91549430918954"
-                fill="transparent"
-                stroke="#92c5e4"
-                stroke-width="3"
-              ></circle>
-              <!-- dash-array sets the slices percent and offset moves counter-clockwise to start at 12:00 instead of 03:00 -->
-
-              <circle
-                class="donut-segment"
-                cx="20"
-                cy="20"
-                r="15.91549430918954"
-                fill="transparent"
-                stroke="#edf2f7"
-                stroke-width="3"
-                stroke-dasharray="5 95"
-                stroke-dashoffset="25"
-                aria-labelledby="donut-segment-1-title donut-segment-1-desc"
-              >
-                <title id="donut-segment-1-title">5% -25h/a</title>
-                <desc id="donut-segment-1-desc">
-                  Tempo para chegar ao nível avançado.
-                </desc>
-              </circle>
-              <circle
-                class="donut-segment"
-                cx="20"
-                cy="20"
-                r="15.91549430918954"
-                fill="transparent"
-                stroke="#2e75bc"
-                stroke-width="3"
-                stroke-dasharray="5 95"
-                stroke-dashoffset="20"
-              >
-                <title id="donut-segment-2-title">5% +50h/a</title>
-                <desc id="donut-segment-2-desc">
-                  Tempo para chegar ao nível intermediário.
-                </desc>
-              </circle>
-              <!-- unused 90% -->
-              <a
-                class="btn"
-                data-toggle="collapse"
-                href="#chart"
-                role="button"
-                aria-expanded="false"
-                aria-controls="collapseExample"
-              >
-                <g class="chart-text">
-                  <text x="48%" y="18%" class="chart-label">
-                    Quantas hs/aula
-                  </text>
-                  <text x="48%" y="25%" class="chart-label">eu preciso?</text>
-                  <text x="48%" y="35%" class="chart-label text-mini">
-                    A maioria precisa entre 25 a 50
-                  </text>
-                  <text x="48%" y="40%" class="chart-label text-mini">
-                    horas aula para terminar o
-                  </text>
-                  <text x="48%" y="45%" class="chart-label text-mini">
-                    básico e isso é feito em 2 meses
-                  </text>
-                  <text x="48%" y="50%" class="chart-label text-mini">
-                    com no mínimo dois
-                  </text>
-                  <text x="48%" y="55%" class="chart-label text-mini">
-                    encontros semanais de
-                  </text>
-                  <text x="48%" y="60%" class="chart-label text-mini">
-                    90 minutos cada.
-                  </text>
-                </g>
-              </a>
-            </svg>
-          </div>
-          <figcaption class="figure-key">
-            <p class="sr-only">
-              Gráfico Donut demonstrando tempo em horas para avançar no método
-              E.A.S.Y.4.u
-            </p>
-
-            <ul class="figure-key-list" aria-hidden="true" role="presentation">
-              <li>
-                <span class="shape-circle shape-white"></span> 5% (-25 h/a)
+            <ul class="text-white d-flex flex-column flex-md-column flex-sm-row legend-circle ps-1">
+              <li class="cursor-pointer align-items-center d-inline-flex mb-2" data-item-legend="one">
+                <span class="circle-legend" data-legend="one">90%</span>
+                Entre 25h/aula e 50h/aula
               </li>
-              <li>
-                <span class="shape-circle shape-blue"></span> 5% (+50 h/a)
+              <li class="cursor-pointer align-items-center d-inline-flex mb-2" data-item-legend="two">
+                <span class="text-dark circle-legend" data-legend="two">5%</span>
+                Mais de 50h/aula
               </li>
-              <li>
-                <span class="shape-circle shape-light-blue"></span> 90% (de 25 a
-                50 h/a)
+              <li class="cursor-pointer align-items-center d-inline-flex mb-2" data-item-legend="tree">
+                <span class="circle-legend text-primary" data-legend="tree">5%</span>
+                Menos de 25h/aula
               </li>
             </ul>
-          </figcaption>
-        </figure>
-
-        <!--div style="margin-bottom: .5rem;" class="collapse" id="chart">
-                <div class="card-body">
-                    <h5 style="text-indent: 30px;">A maioria precisa de 25 a 50 horas aula para terminar o básico e isso se
-                        faz em 2 meses com no mínimo dois encontros semanais de 90 minutos cada.</h5>
-                </div>
-            </div-->
-
-        <div class="contact">
-          <a href="https://wa.me/5584996760105">
-            <h5>Agende sua aula experimental gratuita: (84) 996 760 105</h5>
-          </a>
-          <a href="https://wa.me/5584996760105"
-            ><img class="img-plus" src="./img/whatsapp-icon.png"
-          /></a>
+          </div>
         </div>
-      </div>
-      <br />
-    </section>
+      </section>
+      <div class="col-12 divider my-5 py-2"></div>
+      <section class="bg-primary-color px-4 card-with-chip rounded shadow z-index-3 py-1 py-md-5" data-id-scroll-action="faq" data-line-step="mobile">
+        <span class="chip align-centered-chip chip-primary px-3">FAQ</span>
+        <div class="justify-content-center row align-content-center pb-md-5 pb-4 py-4">
+          <div class="col-12 align-self-center col-md-4 mb-4 mb-md-0 op-5 text-center">
+            <i class="text-white material-icons icon-action-x-x-big">question_answer</i>
+          </div>
+          <div class="text-white align-self-center pe-0 pe-md-5 col-12 col-md-8">
+            <div class="bg-primary-color accordion accordion-flush" data-id="accordion">
+              <div class="bg-primary-color accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed" data-bs-target="#collapseOne" type="button" aria-controls="collapseOne" aria-expanded="false" data-bs-toggle="collapse">
+                    Como são as aulas?
+                  </button>
+                </h2>
+                <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne" data-bs-parent="[data-id=accordion]">
+                  <div class="text-white accordion-body">
+                    Individuais sempre, geralmente no meu domicílio (e agora,
+                    também por videoconferência), com frequência mínima de dois
+                    encontros semanais de 90 minutos cada. Em dois meses, você
+                    aprende o básico (2 anos de uma escola) e serve para viagens
+                    a lazer/Enem/mestrado. Peço somente 15 minutos diários de
+                    leitura.
+                  </div>
+                </div>
+              </div>
+              <div class="bg-primary-color accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed" data-bs-target="#collapseTwo" type="button" aria-controls="collapseTwo" aria-expanded="false" data-bs-toggle="collapse">
+                    Eu já sei algo, preciso começar do básico?
+                  </button>
+                </h2>
+                <div class="collapse accordion-collapse" aria-labelledby="headingTwo" id="collapseTwo" data-bs-parent="[data-id=accordion]">
+                  <div class="text-white accordion-body">
+                    Todos começam do básico, quanto mais fluente mais rápido.
+                    Comigo você adquire tempo de aprendizado.
+                  </div>
+                </div>
+              </div>
+              <div class="bg-primary-color accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed" data-bs-target="#collapseThree" type="button" aria-controls="collapseThree" aria-expanded="false" data-bs-toggle="collapse">
+                    Preciso viajar e meu horário muda sempre, como faço?
+                  </button>
+                </h2>
+                <div class="collapse accordion-collapse" aria-labelledby="headingThree" id="collapseThree" data-bs-parent="[data-id=accordion]">
+                  <div class="text-white accordion-body">
+                    O ideal é que se faça de forma contínua, não sendo possível
+                    e avisando até a véspera, mudamos o dia ou pausamos as
+                    aulas.
+                  </div>
+                </div>
+              </div>
+              <div class="bg-primary-color accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed" data-bs-target="#collapseFour" type="button" aria-controls="collapseFour" aria-expanded="false" data-bs-toggle="collapse">
+                    Quanto é para terminar o básico?
+                  </button>
+                </h2>
+                <div class="collapse accordion-collapse" aria-labelledby="headingFour" id="collapseFour" data-bs-parent="[data-id=accordion]">
+                  <div class="text-white accordion-body">
+                    Depende (entre outros fatores) do seu conhecimento
+                    linguístico, cultural, capacidade de aprendizado, forma de
+                    pagamento, local e o principal: sua determinação. Para saber
+                    o seu valor, precisa fazer uma aula experimental, onde
+                    analiso e faço sua previsão. O gráfico abaixo explica
+                    melhor.
+                  </div>
+                </div>
+              </div>
+              <div class="bg-primary-color accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed" data-bs-target="#collapseFive" type="button" aria-controls="collapseFive" aria-expanded="false" data-bs-toggle="collapse">
+                    Se eu me esforçar, gasto menos?
+                  </button>
+                </h2>
+                <div class="collapse accordion-collapse" aria-labelledby="headingFive" id="collapseFive" data-bs-parent="[data-id=accordion]">
+                  <div class="text-white accordion-body">
+                    Sim, bons alunos terminam antes do previsto, além de
+                    devolver o que não foi usado. Existem descontos e tudo pode
+                    ser no cartão em até 12X.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="col-12 divider py-5"></div>
+      <section class="text-center py-1 py-md-5">
+        <h3 class="text-primary text-strong title">
+          Agende sua <br class="d-none d-sm-inline-block">
+          aula experimental
+        </h3>
+        <p class="text-dark">
+          E faça parte do top 1% dos brasileiros que têm fluência real
+        </p>
+        <div class="col-12 divider py-3"></div>
+        <a class="rounded-pill btn btn-secondary onhover-scale-0-95 btn-lg h3 px-5" aria-label="Agendar Aula Experimental" href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0" rel="noopener" target="_blank" title="Agendar aula experimental">Agendar aula</a>
+        <i class="d-block small text-dark">Aula experimental gratuíta</i>
+      </section>
+      <div class="my-5"></div>
+    </main>
+    <footer class="bg-primary-color position-relative footer-page">
+      <dic class="container">
+        <p class="text-white text-center small">
+          Todos os direitos reservados Easy4You -
+          <span data-id="year"></span>
+        </p>
+      </dic>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"></script>
+    <!-- inject:template:js -->
+    <script src="./js/budle-eb057fe266a0b5804f59.min.js"></script>
+    <!-- endinject:js -->
   </body>
 </html>
