@@ -11,9 +11,11 @@ const cleanFiles = require("gulp-clean");
 
 task("minify-js", () =>
   src("js/*.js")
-    .pipe(minifyJS({
-		mode: 'production',
-	}))
+    .pipe(
+      minifyJS({
+        mode: "production",
+      })
+    )
     .pipe(
       rename({
         prefix: "budle-",
@@ -55,7 +57,7 @@ const photoOrganize = () =>
 const brandOrganize = () =>
   src("./dist/assets/*.png").pipe(dest("./dist/assets/brand/"));
 
-const cleanImages = () => 
+const cleanImages = () =>
   src([
     "./dist/assets/*.svg",
     "./dist/assets/*.png",
@@ -66,21 +68,25 @@ task(
   "organize-paths-images",
   series(optimizeImages, svgOrganize, photoOrganize, brandOrganize, cleanImages)
 );
-task("build-html", () => {
+task("build-html", () =>
+  src("*.html")
+    .pipe(
+      htmlMin({
+        collapseWhitespace: false,
+        sortAttributes: true,
+        sortClassName: true,
+      })
+    )
+    .pipe(dest("dist/"))
+);
+task("inject-dependencies", () => {
   const js = src("./dist/js/*.js", {
     read: false,
   });
   const css = src("./dist/css/*.css", {
     read: false,
   });
-  return src("*.html")
-    .pipe(
-      htmlMin({
-        collapseWhitespace: true,
-        sortAttributes: true,
-        sortClassName: true,
-      })
-    )
+  return src("./dist/index.html")
     .pipe(
       inject(js, {
         starttag: "<!-- inject:template:js -->",
@@ -93,12 +99,14 @@ task("build-html", () => {
         endtag: "<!-- endinject:css -->",
       })
     )
-    .pipe(dest("dist/"));
+    .pipe(
+      dest("dist/")
+    )
 });
-
 exports.build = series(
   "minify-css",
   "minify-js",
   "build-html",
-  "organize-paths-images"
+  "organize-paths-images",
+  "inject-dependencies"
 );
