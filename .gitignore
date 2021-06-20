@@ -1,8 +1,4 @@
 ## Node Modules
 node_modules/
-
-## Product version
-dist/
-
 ## Vs code settings
 .vscode/
