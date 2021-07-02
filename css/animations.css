@@ -1,0 +1,90 @@
+:root {
+	--transition-default: 500ms ease-out;
+}
+.animate-vertical-icon {
+	animation-name: vertical;
+	animation-iteration-count: infinite;
+	animation-duration: 1900ms;
+	transition: var(--transition-defaul);
+  }
+  @-webkit-keyframes vertical {
+	0% {
+	  -webkit-transform: translateY(0);
+	}
+	50% {
+	  -webkit-transform: translateY(15px);
+	}
+	100% {
+	  -webkit-transform: translateY(0);
+	}
+  }
+  @keyframes vertical {
+	0% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(15px);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+  }
+
+.onclick-animate-scale:active {
+	animation-name: pulse;
+	animation-iteration-count: infinite;
+	animation-duration: 1500ms;
+	transition: var(--transition-defaul);
+}
+	@-webkit-keyframes pulse {
+		0% {
+			-webkit-transform: scale(1);
+		}
+		50% {
+			-webkit-transform: scale(.9);
+		}
+		100% {
+			-webkit-transform: scale(1);
+		}
+	}
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(.9);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+.animate-pulse {
+	position: relative;
+}
+.animate-pulse::before,
+.animate-pulse::after {
+	animation-name: sonar;
+	animation-iteration-count: infinite;
+	animation-duration: 2500ms;
+	transition: var(--transition-defaul);
+	--scale: scale(3);
+}
+.animate-pulse::after {
+	--scale: scale(2) !important;
+}
+	@keyframes sonar {
+		0% {
+			box-shadow: 0 0 0 var(--secondary-color);
+			opacity: 0;
+			transform: scale(0);
+		}
+		50% {
+			opacity: 0.25;
+			transform: var(--scale);
+		}
+		100% {
+			box-shadow: 0 0 0 var(--secondary-color);
+			opacity: 0;
+			transform: scale(0);
+		}
+	}

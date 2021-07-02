@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 .vscode/
+=======
+## Node Modules
+node_modules/
+## Vs code settings
+.vscode/
+>>>>>>> origin/main
